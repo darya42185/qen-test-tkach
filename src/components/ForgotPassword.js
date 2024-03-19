@@ -6,8 +6,6 @@ const ForgotPassword = ({ onCancel, handleSend }) => {
 
   const handleEmailChange = (e) => {
     const { value } = e.target;
-    // Simple email validation using regex
-    const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
     setUsername(value);
   };
 

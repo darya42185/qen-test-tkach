@@ -10,8 +10,8 @@ const Login = ({
   handleLogin,
   handleEmailChange,
   isEmailValid,
-  error,
   username,
+  error,
 }) => {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -64,15 +64,16 @@ const Login = ({
         </div>
       )}
       {isEmailValid && (
-        <a href="#" className="forgot-password" onClick={onForgotPasswordClick}>
+        <button className="forgot-password" onClick={onForgotPasswordClick}>
           Forgot your password?
-        </a>
+        </button>
       )}
       <button className="login-button" onClick={handleLogin}>
         Log in to Qencode
       </button>
       <h2 className="sign-up">
-        Is your company new to Quencode? <a href="#">Sign up</a>
+        Is your company new to Quencode?
+        <button className="sign-up-btn">Sign up</button>
       </h2>
       {error && <p className="error-message">{error}</p>}
     </div>

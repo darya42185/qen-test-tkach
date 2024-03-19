@@ -10,7 +10,7 @@ const App = () => {
   const [showForgotPassword, setShowForgotPassword] = useState(false);
   const [isEmailSent, setIsEmailSent] = useState(false);
   const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [password] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(false);
   const [error, setError] = useState("");
 
@@ -82,12 +82,12 @@ const App = () => {
     <div>
       {!loggedInUser && !showForgotPassword && (
         <Login
-          onLogin={handleLogin}
           onForgotPasswordClick={handleForgotPasswordClick}
           handleLogin={handleLogin}
           handleEmailChange={handleEmailChange}
           isEmailValid={isEmailValid}
           username={username}
+          error={error}
         />
       )}
       {loggedInUser && !forgotPasswordEmail && <p>Welcome, {loggedInUser}!</p>}

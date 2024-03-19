@@ -33,6 +33,16 @@ html {
   font-family: "Basic Grotesque Pro", sans-serif;
   font-size: 12px;
   font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sign-up-btn {
+  background-color: #fff;
+  border: none;
+  width: 60;
 }
 
 .header-name {
@@ -130,6 +140,9 @@ html {
   font-family: "Basic Grotesque Pro", sans-serif;
   font-size: 12px;
   font-weight: 400;
+  background-color: #fff;
+  border: none;
+  width: 100%;
 }
 
 .separator {
