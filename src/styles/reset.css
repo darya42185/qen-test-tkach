@@ -1,0 +1,56 @@
+.password-input-container {
+  width: 92%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1.2px solid #d3d8dc;
+  border-radius: 7px;
+}
+
+.password-input:focus {
+  outline: none;
+}
+
+.password-input-container {
+  position: relative;
+}
+
+.password-input,
+.show-password-button {
+  border: none;
+  background-color: #fff;
+}
+
+.show-password-button {
+  position: absolute;
+  left: 90%;
+}
+
+.show-password-button img {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+
+.password-header,
+.confirm-password-header {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.reset-button {
+  width: 107%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.password-control {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}

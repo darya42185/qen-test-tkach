@@ -1,0 +1,61 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgot-container {
+  max-width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-input {
+  width: 92%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1.2px solid #d3d8dc;
+  border-radius: 7px;
+}
+
+.email-input:focus {
+  outline: none;
+}
+
+.send-button,
+.cancel-button {
+  width: 107%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #fff;
+  color: #000;
+  border: 1.2px solid #d3d8dc;
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%;
+  }
+}

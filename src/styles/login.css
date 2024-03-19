@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Basic Grotesque Pro";
+  src: url("../assets/fonts/BasisGrotesquePro-Black.eot")
+    format("embedded-opentype");
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  max-width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.log-in {
+  color: #1a1919;
+  font-family: "Basic Grotesque Pro", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.sign-up {
+  font-family: "Basic Grotesque Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.header-name {
+  color: #316fea;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+}
+
+.google-login,
+.github-login {
+  width: 200px;
+  display: flex;
+  background-color: #fff;
+  border: 1.2px solid #d3d8dc;
+  border-radius: 7px;
+}
+
+.google-login {
+  margin-right: 10px;
+}
+
+.github-login {
+  margin-left: 10px;
+}
+
+.google-login > img,
+.github-login > img {
+  width: 20px;
+  position: absolute;
+  top: 15px;
+  padding-left: 25px;
+}
+
+.google-login > h3,
+.github-login > h3 {
+  padding-left: 55px;
+}
+
+.email-input,
+.password-input-container {
+  width: 92%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1.2px solid #d3d8dc;
+  border-radius: 7px;
+}
+
+.email-input:focus,
+.password-input:focus {
+  outline: none;
+}
+
+.password-input-container {
+  position: relative;
+}
+
+.password-input,
+.show-password-button {
+  border: none;
+  background-color: #fff;
+}
+
+.show-password-button {
+  position: absolute;
+  left: 90%;
+}
+
+.show-password-button img {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.forgot-password {
+  margin-left: 67%;
+  margin-bottom: 15px;
+  font-family: "Basic Grotesque Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.separator {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  color: #ccc;
+}
+
+.separator:before,
+.separator:after {
+  content: "";
+  flex-grow: 1;
+  border-top: 1px solid #ccc; /* Solid line */
+  margin: 0 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%;
+  }
+}
